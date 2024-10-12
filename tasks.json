@@ -4,7 +4,7 @@
     {
       "label": "build",
       "type": "shell",
-      "command": "g++",
+      "command": "C:/msys64/ucrt64/bin/g++",
       "args": [
         "-g",
         "Source.cpp",
