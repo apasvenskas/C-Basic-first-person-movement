@@ -44,6 +44,13 @@ int main(){
     map += L"################";
 
     while(1){
+
+        if(GetAsyncKeyState((unsigned short)'A') & 0x8000)
+            fPlayerA -= (0.1f);
+
+        if(GetAsyncKeyState((unsigned short)'D') & 0x8000)
+            fPlayerA += (0.1f);
+
         // wall mechanics
         for(int x = 0; x < nScreenWidth; x++){
             float fRayAngle = (fPlayerA - fFov / 2.0f) + ((float)x / (float)nScreenWidth) * fFov;
